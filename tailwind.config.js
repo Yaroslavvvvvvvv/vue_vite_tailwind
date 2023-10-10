@@ -7,8 +7,13 @@ export default {
   theme: {
     extend: {
         backgroundImage: {
-            'bad': "url('./src/assets/images/bad.jpg')",
+            'bad': "url('./src/assets/images/bad.jpg')"
         },
+        extend: {
+            'bg-bad': {
+                maxWidth: '100%',
+            }
+        }
     },
   },
   plugins: [],
