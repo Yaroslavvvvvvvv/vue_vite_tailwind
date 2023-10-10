@@ -1,12 +1,9 @@
 <script setup>
+import MyHeader from "./components/MyHeader.vue";
 </script>
 
 <template>
-  <div class="text-center">
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  </div>
+  <MyHeader/>
 </template>
 
 <style scoped>
