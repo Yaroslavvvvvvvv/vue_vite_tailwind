@@ -12,6 +12,7 @@ export default {
         extend: {
             'bg-bad': {
                 maxWidth: '100%',
+
             }
         }
     },
