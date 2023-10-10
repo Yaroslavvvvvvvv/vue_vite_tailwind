@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
         backgroundImage: {
-            'bad': "url('./src/assets/images/coff_bad.png')"
+            'bad': "url('./src/assets/images/white_bed.jpeg')"
         },
         extend: {
             'bg-bad': {
