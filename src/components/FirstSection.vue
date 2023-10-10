@@ -4,7 +4,7 @@
 
 <template>
   <div class="relative">
-    <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-green-400 bg-bad max-w-full">
+    <div class="bg-bad sticky top-0 h-screen flex flex-col items-center justify-center bg-green-400 max-w-full">
       <h2 class="text-4xl">Warmly</h2>
       <p>Досконалість у кожній нитці</p>
     </div>
