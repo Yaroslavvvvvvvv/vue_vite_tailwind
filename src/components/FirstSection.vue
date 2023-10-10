@@ -5,6 +5,7 @@
 <template>
   <div class="relative">
     <div class="bg-cover bg-center sticky top-0 h-screen flex flex-col items-center justify-center bg-bad">
+      <img src="../assets/images/white_bed.jpeg" alt="">
       <h2 class="text-4xl">Warmly</h2>
       <p>Досконалість у кожній нитці</p>
     </div>
