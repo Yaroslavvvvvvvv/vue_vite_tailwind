@@ -2,14 +2,16 @@
 import MyHeader from "./components/MyHeader.vue";
 import FirstSection from "./components/FirstSection.vue";
 import MyFooter from "./components/MyFooter.vue";
-import ProductLists from "./components/ProductLists.vue";
+import ProductList from "./components/ProductList.vue";
 </script>
 
 <template>
-  <MyHeader/>
-  <FirstSection/>
-  <ProductLists/>
-  <MyFooter/>
+  <div>
+    <MyHeader />
+    <FirstSection/>
+    <ProductList/>
+    <MyFooter />
+  </div>
 </template>
 
 <style scoped>
