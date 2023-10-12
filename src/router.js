@@ -9,8 +9,18 @@ const routes = [
     {
         path: '/catalog',
         name: 'catalog',
+        component: () => import('./views/MyCatalog.vue'),
+    },
+    {
+        path: '/list',
+        name: 'list',
         component: () => import('./components/ProductList.vue'),
     },
+    {
+        path: '/card',
+        name: 'card',
+        component: () => import('./components/ProductCard.vue'),
+    }
 ];
 
 const router = createRouter({
