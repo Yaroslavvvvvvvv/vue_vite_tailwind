@@ -14,7 +14,7 @@
           <div class="flex mb-4">
             <div class="mr-4">
               <span class="font-bold text-gray-700">ЦІна:</span>
-              <span class="text-gray-600 ml-2">{{product.price}}</span>
+              <span class="text-gray-700 ml-2">{{product.price}}</span>
             </div>
             <div>
               <span class="font-bold text-gray-700">Наявність:</span>
