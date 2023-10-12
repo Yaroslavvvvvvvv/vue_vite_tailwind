@@ -9,7 +9,7 @@
         </div>
         <div class="md:flex-1 px-4" v-for="product in products" :key="product.id">
           <h2 class="text-2xl font-bold mb-2">{{product.name}}</h2>
-          <p class="text-gray-600 text-sm mb-4">{{product.about}}
+          <p class="text-gray-700 text-sm mb-4">{{product.about}}
           </p>
           <div class="flex mb-4">
             <div class="mr-4">
