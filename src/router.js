@@ -20,6 +20,7 @@ const routes = [
         path: '/card',
         name: 'card',
         component: () => import('./components/ProductCard.vue'),
+        props: true,
     }
 ];
 
