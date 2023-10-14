@@ -16,12 +16,6 @@ const routes = [
         name: 'list',
         component: () => import('./components/ProductList.vue'),
     },
-    {
-        path: '/card',
-        name: 'card',
-        component: () => import('./components/ProductCard.vue'),
-        props: true,
-    }
 ];
 
 const router = createRouter({
