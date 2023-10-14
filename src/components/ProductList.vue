@@ -18,24 +18,17 @@
 
   <!-- Modal Dialog -->
   <div v-if="selectedProduct"
-       class="fixed inset-0 flex items-center justify-center z-50 bg-black animate-fade-down animate-duration-1000">
+       class="fixed inset-0 flex items-center justify-center z-50 animate-fade-down animate-duration-1000">
     <div class="absolute top-0 left-0 w-full h-full flex flex-col md:flex-row bg-gray-200">
-      <div class="m-w-full lg:w-1/2">
-        <img :src="selectedProduct.imageSrc" alt="постіль" class="w-full h-full object-cover rounded-lg shadow-lg"/>
+      <div class="md:w-1/2 sm:h-3/4 ">
+        <img :src="selectedProduct.imageSrc" alt="постіль"/>
       </div>
       <div class="bg-gray-200 p-4 md:p-8 w-full md:w-1/2">
-        <h2 class="font-semibold  text-2xl mb-4">{{ selectedProduct.name }}</h2>
+        <h2 class="font-semibold  text-2xl">{{ selectedProduct.name }}</h2>
         <p>{{ selectedProduct.about }}</p>
-        <div class="mr-4">
-          <div class=" mb-4 mt-4">
-            <span class="font-bold text-gray-700">Ціна:</span>
-            <span class="text-gray-700 ml-2">{{ selectedProduct.price }}</span>
-          </div>
-          <button @click="closeProductModal" class="mt-4 text-blue-500">Закрыть</button>
-          <div class="md:flex-1 px-4">
-            <div>
-            </div>
-          </div>
+        <div class="flex justify-between">
+          <p class="font-bold text-gray-700">Ціна:<span class="text-gray-700">{{selectedProduct.price }}</span></p>
+          <button @click="closeProductModal" class="text-blue-500">Закрыть</button>
         </div>
       </div>
     </div>
