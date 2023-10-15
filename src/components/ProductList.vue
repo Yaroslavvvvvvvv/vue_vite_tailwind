@@ -20,15 +20,15 @@
   <div v-if="selectedProduct"
        @click="closeProductModal"
        class="fixed inset-0 flex items-center justify-center z-50 animate-fade-down animate-duration-1000">
-    <div class="absolute top-0 left-0 w-full h-full flex flex-col md:flex-row bg-gray-200">
+    <div class="absolute top-0 left-0 w-full h-full flex flex-col md:flex-row bg-white">
       <div class="md:w-1/2 sm:h-3/4 ">
         <img :src="selectedProduct.imageSrc" alt="постіль"/>
       </div>
-      <div class="bg-gray-200 p-4 md:p-8 w-full md:w-1/2">
-        <h2 class="font-semibold  text-2xl">{{ selectedProduct.name }}</h2>
-        <p>{{ selectedProduct.about }}</p>
-        <div class="flex justify-between">
-          <p class="font-bold text-gray-700">Ціна:<span class="text-gray-700">{{selectedProduct.price }}</span></p>
+      <div class="bg-white p-4 md:p-8 w-full md:w-1/2 hidden lg:block md:block">
+        <h2 class="font-semibold lg:text-4xl md:text-3xl">{{ selectedProduct.name }}</h2>
+        <p class="mt-6 font-bold lg:text-xl">{{ selectedProduct.about }}</p>
+        <div class="flex justify-between mt-4">
+          <p class="font-bold lg:text-2xl">Ціна:<span class="text-green-700 ml-2 lg:text-2xl">{{selectedProduct.price }}</span></p>
         </div>
       </div>
     </div>
