@@ -15,7 +15,7 @@ const mobileMenuOpen = ref(false)
 </script>
 
 <template>
-  <header class="bg-stone-400/75">
+  <header class="bg-stone-400/75 sticky top-0 bg-stone-400/75 z-50">
         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 animate-fade-down animate-duration-1000"
              aria-label="Global">
           <div class="flex lg:flex-1">
