@@ -18,6 +18,7 @@
 
   <!-- Modal Dialog -->
   <div v-if="selectedProduct"
+       @click="closeProductModal"
        class="fixed inset-0 flex items-center justify-center z-50 animate-fade-down animate-duration-1000">
     <div class="absolute top-0 left-0 w-full h-full flex flex-col md:flex-row bg-gray-200">
       <div class="md:w-1/2 sm:h-3/4 ">
@@ -28,7 +29,6 @@
         <p>{{ selectedProduct.about }}</p>
         <div class="flex justify-between">
           <p class="font-bold text-gray-700">Ціна:<span class="text-gray-700">{{selectedProduct.price }}</span></p>
-          <button @click="closeProductModal" class="text-blue-500">Закрыть</button>
         </div>
       </div>
     </div>
@@ -49,3 +49,5 @@ const closeProductModal = () => {
   selectedProduct.value = null;
 };
 </script>
+<style>
+</style>
