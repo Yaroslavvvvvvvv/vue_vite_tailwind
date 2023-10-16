@@ -20,7 +20,7 @@ const mobileMenuOpen = ref(false)
          aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
-          <span class="text-4xl h-8 w-auto text-teal-700 font-black">Warmly.</span>
+          <span class="text-4xl h-8 w-auto text-teal-700 font-black">Aeneas plus.</span>
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -31,11 +31,13 @@ const mobileMenuOpen = ref(false)
         </button>
       </div>
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
-        <router-link to="/" class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Головна</router-link>
-        <router-link to="/catalog" class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Каталог</router-link>
-        <a href="#" class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Умови співпраці</a>
-        <a href="#" class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Популярні запитання</a>
-        <a href="#" class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Зв'язок з нами</a>
+        <router-link to="/" class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Головна
+        </router-link>
+        <router-link to="/catalog" class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Каталог
+        </router-link>
+        <router-link to="/footer" class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Зв'язок з
+          нами
+        </router-link>
       </PopoverGroup>
     </nav>
     <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -56,18 +58,18 @@ const mobileMenuOpen = ref(false)
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
               <router-link to="/"
-                           class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Головна</router-link>
+                           class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                Головна
+              </router-link>
               <router-link to="/catalog"
-                           class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Каталог</router-link>
-              <a href="#"
-                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Умови
-                співпраці</a>
-              <a href="#"
-                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Популярні
-                запитання</a>
-              <a href="#"
-                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Зв'язок
-                з нами</a>
+                           class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                Каталог
+              </router-link>
+              <router-link to="/footer"
+                           class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                Зв'язок
+                з нами
+              </router-link>
             </div>
           </div>
         </div>

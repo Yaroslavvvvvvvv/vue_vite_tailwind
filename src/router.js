@@ -16,6 +16,12 @@ const routes = [
         name: 'list',
         component: () => import('./components/ProductList.vue'),
     },
+    {
+        path: '/footer',
+        name: 'footer',
+        component: () => import('./components/MyFooter.vue'),
+    },
+
 ];
 
 const router = createRouter({
