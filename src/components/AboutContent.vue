@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative" id="home">
     <div class="bg-cover bg-center sticky top-0 h-screen flex flex-col items-center justify-center bg-bad">
       <h2 class="animate-fade-down animate-duration-1000 animate-ease-linear mb-4 text-center text-5xl font-extrabold
       leading-none tracking-tight text-neutral-600 md:text-6xl lg:text-6xl sm:text-6xl text-opacity-80">

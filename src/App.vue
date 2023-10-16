@@ -7,7 +7,7 @@ import MyFooter from "./components/MyFooter.vue";
 <template>
   <MyHeader/>
   <router-view></router-view>
-  <MyFooter id="footer"/>
+  <MyFooter/>
 </template>
 
 <style scoped>

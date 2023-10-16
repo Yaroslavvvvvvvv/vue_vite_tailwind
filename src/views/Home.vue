@@ -6,8 +6,8 @@ import MyCatalog from "./MyCatalog.vue";
 </script>
 
 <template>
-  <AboutContent id="home"/>
-  <MyCatalog id="catalog"/>
+  <AboutContent/>
+  <MyCatalog/>
 </template>
 
 <style scoped>
