@@ -12,16 +12,6 @@ import {
 
 
 const mobileMenuOpen = ref(false)
-const scrollTo = (target) => {
-  const targetElement = document.querySelector(target);
-
-  if (targetElement) {
-    targetElement.scrollIntoView({
-      behavior: 'smooth',
-    });
-  }
-}
-
 </script>
 
 <template>
@@ -41,21 +31,11 @@ const scrollTo = (target) => {
         </button>
       </div>
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
-        <router-link
-            to="/"
-            @click="scrollTo('#home')"
-            class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Головна
-        </router-link>
-        <router-link
-            to="/"
-            @click="scrollTo('#catalog')"
-            class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Каталог
-        </router-link>
+        <router-link to="/" class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Головна</router-link>
+        <router-link to="/catalog" class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Каталог</router-link>
         <a href="#" class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Умови співпраці</a>
         <a href="#" class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Популярні запитання</a>
-        <a
-            @click="scrollTo('#footer')"
-            class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Зв'язок з нами</a>
+        <a href="#" class="text-lg font-semibold leading-6 text-gray-900 hover:text-teal-700">Зв'язок з нами</a>
       </PopoverGroup>
     </nav>
     <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -75,24 +55,17 @@ const scrollTo = (target) => {
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <a href="#"
-                 @click="scrollTo('#home')"
-                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                Головна
-              </a>
-              <a href="#catalog"
-                 @click="scrollTo('#catalog')"
-                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                Каталог
-              </a>
+              <router-link to="/"
+                           class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Головна</router-link>
+              <router-link to="/catalog"
+                           class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Каталог</router-link>
               <a href="#"
                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Умови
                 співпраці</a>
               <a href="#"
                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Популярні
                 запитання</a>
-              <a @click="scrollTo('#footer')"
-                 href="#footer"
+              <a href="#"
                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Зв'язок
                 з нами</a>
             </div>
@@ -104,7 +77,5 @@ const scrollTo = (target) => {
 </template>
 
 <style scoped>
-a {
-  cursor: pointer;
-}
+
 </style>
